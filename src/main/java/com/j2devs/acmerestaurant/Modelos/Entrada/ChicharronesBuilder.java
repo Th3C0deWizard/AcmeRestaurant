@@ -1,0 +1,8 @@
+package com.j2devs.acmerestaurant.Modelos.Entrada;
+
+public class ChicharronesBuilder extends EntradaBuilder{
+    @Override
+    public void prepararEntrada() {
+
+    }
+}
