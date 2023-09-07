@@ -1,5 +1,7 @@
 package com.j2devs.acmerestaurant.Modelos.Bebida;
 
+import com.j2devs.acmerestaurant.Modelos.Componente;
+
 public class Bebida implements Cloneable{
     private Double precio;
     private Componente componente;
