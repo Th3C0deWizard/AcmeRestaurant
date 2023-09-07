@@ -7,6 +7,6 @@ module com.j2devs.acmerestaurant {
 
   opens com.j2devs.acmerestaurant to javafx.fxml;
   exports com.j2devs.acmerestaurant;
-  exports com.j2devs.acmerestaurant.controllers;
-  opens com.j2devs.acmerestaurant.controllers to javafx.fxml;
+  exports com.j2devs.acmerestaurant.GUI;
+  opens com.j2devs.acmerestaurant.GUI to javafx.fxml;
 }

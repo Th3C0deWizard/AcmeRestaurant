@@ -1,5 +1,4 @@
 package com.j2devs.acmerestaurant.Modelos;
-
 import com.j2devs.acmerestaurant.Modelos.Bebida.Bebida;
 import com.j2devs.acmerestaurant.Modelos.Entrada.Entrada;
 import com.j2devs.acmerestaurant.Modelos.PlatoFuerte.PlatoFuerte;
