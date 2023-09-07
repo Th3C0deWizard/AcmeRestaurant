@@ -1,17 +1,21 @@
 package com.j2devs.acmerestaurant.Modelos.PlatoFuerte;
 
-public abstract class PlatoFuerteBuilder {
-    protected PlatoFuerte platoFuerte;
+import com.j2devs.acmerestaurant.Modelos.Builder;
 
-    public PlatoFuerteBuilder() {}
+public abstract class PlatoFuerteBuilder implements Builder {
+  protected PlatoFuerte platoFuerte;
 
-    public PlatoFuerte getPlatoFuerte() {
-        return this.platoFuerte;
-    }
+  public PlatoFuerteBuilder() {
+    this.platoFuerte = new PlatoFuerte();
+  }
 
-    public abstract void prepararPrincipal();
+  public PlatoFuerte getPlatoFuerte() {
+    return this.platoFuerte;
+  }
 
-    public abstract void prepararAcompanante1();
+  public abstract void prepararPrincipal();
 
-    public abstract void prepararAcompanante2();
+  public abstract void prepararAcompanante1();
+
+  public abstract void prepararAcompanante2();
 }

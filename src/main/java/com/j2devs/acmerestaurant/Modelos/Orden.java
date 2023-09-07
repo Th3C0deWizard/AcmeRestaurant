@@ -1,9 +1,10 @@
 package com.j2devs.acmerestaurant.Modelos;
 
-import Bebida.Bebida;
-import Entrada.Entrada;
+import com.j2devs.acmerestaurant.Modelos.Bebida.Bebida;
+import com.j2devs.acmerestaurant.Modelos.Entrada.Entrada;
 import com.j2devs.acmerestaurant.Modelos.PlatoFuerte.PlatoFuerte;
-import Postre.Postre;
+import com.j2devs.acmerestaurant.Modelos.Postre.Postre;
+
 public class Orden {
     private final int numeroOrden;
 

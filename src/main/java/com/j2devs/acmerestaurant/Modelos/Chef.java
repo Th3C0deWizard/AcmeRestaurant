@@ -1,9 +1,9 @@
 package com.j2devs.acmerestaurant.Modelos;
 
-import Entrada.EntradaBuilder;
+import com.j2devs.acmerestaurant.Modelos.Bebida.BebidaBuilder;
+import com.j2devs.acmerestaurant.Modelos.Entrada.EntradaBuilder;
 import com.j2devs.acmerestaurant.Modelos.PlatoFuerte.PlatoFuerteBuilder;
-import Postre.PostreBuilder;
-import Bebida.BebidaBuilder;
+import com.j2devs.acmerestaurant.Modelos.Postre.PostreBuilder;
 
 public class Chef {
 
