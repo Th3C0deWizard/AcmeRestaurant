@@ -1,13 +1,15 @@
 package com.j2devs.acmerestaurant.Modelos.Postre;
+
 import com.j2devs.acmerestaurant.Modelos.Componente;
 
-public class Postre implements Cloneable{
+public class Postre implements Cloneable {
     private Double precio;
     private Componente principal;
     private Componente acompanante1;
     private Componente acompanante2;
 
-    public Postre() {}
+    public Postre() {
+    }
 
     @Override
     public Postre clone() {

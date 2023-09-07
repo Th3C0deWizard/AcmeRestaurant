@@ -1,18 +1,25 @@
 package com.j2devs.acmerestaurant.Modelos.Postre;
 
-public class Postre3Builder extends PostreBuilder{
-    @Override
-    public void agregarBase() {
+import com.j2devs.acmerestaurant.Modelos.Componente;
 
-    }
+public class Postre3Builder extends PostreBuilder {
+  @Override
+  public void agregarBase() {
+    this.postre.setPrincipal(new Componente("Principal", "Brownie"));
+  }
 
-    @Override
-    public void agregarAcompaniante1() {
+  @Override
+  public void agregarAcompaniante1() {
+    this.postre.setAcompanante1(new Componente("Acompanante1", "Chispitas de chocolate"));
+  }
 
-    }
+  @Override
+  public void agregarAcompaniante2() {
+    this.postre.setAcompanante2(null);
+  }
 
-    @Override
-    public void agregarAcompaniante2() {
-
-    }
+  @Override
+  public void asignarPrecio() {
+    this.postre.setPrecio(100.0);
+  }
 }

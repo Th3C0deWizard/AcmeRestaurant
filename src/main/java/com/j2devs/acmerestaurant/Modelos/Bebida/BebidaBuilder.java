@@ -1,13 +1,19 @@
 package com.j2devs.acmerestaurant.Modelos.Bebida;
 
-public abstract class BebidaBuilder {
-    protected Bebida bebida;
+import com.j2devs.acmerestaurant.Modelos.Builder;
 
-    public BebidaBuilder() {}
+public abstract class BebidaBuilder implements Builder {
+  protected Bebida bebida;
 
-    public Bebida getBebida() {
-        return this.bebida;
-    }
+  public BebidaBuilder() {
+    this.bebida = new Bebida();
+  }
 
-    public abstract void prepararBebida();
+  public Bebida getBebida() {
+    return this.bebida;
+  }
+
+  public abstract void prepararBebida();
+
+  public abstract void asignarPrecio();
 }
