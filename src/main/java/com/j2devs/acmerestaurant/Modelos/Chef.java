@@ -11,22 +11,26 @@ public class Chef {
 
     private void prepararEntrada(EntradaBuilder builder){
         builder.prepararEntrada();
+        builder.asignarPrecio();
     }
 
     private void prepararPlatoFuerte(PlatoFuerteBuilder builder){
         builder.prepararPrincipal();
         builder.prepararAcompanante1();
         builder.prepararAcompanante2();
+        builder.asignarPrecio();
     }
 
     private void prepararPostre(PostreBuilder builder){
         builder.agregarBase();
         builder.agregarAcompaniante1();
         builder.agregarAcompaniante2();
+        builder.asignarPrecio();
     }
 
     private void prepararBebida(BebidaBuilder builder){
         builder.prepararBebida();
+        builder.asignarPrecio();
     }
 
     public Orden prepararOrden(EntradaBuilder eBuilder, PlatoFuerteBuilder pfBuilder, PostreBuilder pBuilder, BebidaBuilder bBuilder){

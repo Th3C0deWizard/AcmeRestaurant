@@ -2,10 +2,11 @@ package com.j2devs.acmerestaurant.Modelos.Bebida;
 
 import com.j2devs.acmerestaurant.Modelos.Builder;
 
-public abstract class BebidaBuilder implements Builder {
+public abstract class BebidaBuilder extends Builder {
   protected Bebida bebida;
 
-  public BebidaBuilder() {
+  public BebidaBuilder(String name) {
+    super(name);
     this.bebida = new Bebida();
   }
 

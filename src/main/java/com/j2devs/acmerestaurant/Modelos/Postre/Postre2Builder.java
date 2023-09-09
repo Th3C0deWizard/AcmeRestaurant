@@ -3,6 +3,10 @@ package com.j2devs.acmerestaurant.Modelos.Postre;
 import com.j2devs.acmerestaurant.Modelos.Componente;
 
 public class Postre2Builder extends PostreBuilder {
+  public Postre2Builder(String name) {
+    super(name);
+  }
+
   @Override
   public void agregarBase() {
     this.postre.setPrincipal(new Componente("Principal", "Helado"));
@@ -20,6 +24,6 @@ public class Postre2Builder extends PostreBuilder {
 
   @Override
   public void asignarPrecio() {
-    this.postre.setPrecio(100.0);
+    this.postre.setPrecio(4500.0);
   }
 }

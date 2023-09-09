@@ -2,10 +2,11 @@ package com.j2devs.acmerestaurant.Modelos.PlatoFuerte;
 
 import com.j2devs.acmerestaurant.Modelos.Builder;
 
-public abstract class PlatoFuerteBuilder implements Builder {
+public abstract class PlatoFuerteBuilder extends Builder {
   protected PlatoFuerte platoFuerte;
 
-  public PlatoFuerteBuilder() {
+  public PlatoFuerteBuilder(String name) {
+    super(name);
     this.platoFuerte = new PlatoFuerte();
   }
 

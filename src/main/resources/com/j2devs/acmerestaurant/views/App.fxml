@@ -421,50 +421,51 @@
           <Button layoutX="1191.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" stylesheets="@StyleLogin.css" text="Exit" />
       <AnchorPane layoutX="772.0" layoutY="85.0" prefHeight="499.0" prefWidth="418.0" style="-fx-background-color: #fdd7bd;">
          <children>
-            <Text fill="#ac2428" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio Total Menú" textAlignment="CENTER" wrappingWidth="398.68989562988276">
+            <Text fill="#ac2428" layoutX="-1.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio Total Menú" textAlignment="CENTER" wrappingWidth="398.68989562988276">
                <font>
                   <Font name="Maiandra GD" size="45.0" />
                </font>
             </Text>
-            <Separator layoutX="23.0" layoutY="241.0" prefHeight="3.0" prefWidth="370.0" style="-fx-background-color: rgb(0, 0, 0);" />
+            <Separator layoutX="23.0" layoutY="250.0" prefHeight="3.0" prefWidth="370.0" style="-fx-background-color: rgb(0, 0, 0);" />
             <Text fill="#ac2428" layoutX="9.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menú" textAlignment="CENTER" wrappingWidth="398.68989562988276">
                <font>
                   <Font name="Maiandra GD" size="45.0" />
                </font>
             </Text>
-            <TextField fx:id="precio" editable="false" layoutX="133.0" layoutY="324.0" style="-fx-border-color: #ac2428;" stylesheets="@StyleLogin.css" />
+            <TextField fx:id="precio" editable="false" layoutX="132.0" layoutY="340.0" style="-fx-border-color: #ac2428;" stylesheets="@StyleLogin.css" />
             <Separator layoutX="24.0" layoutY="384.0" prefHeight="3.0" prefWidth="370.0" style="-fx-background-color: rgb(0, 0, 0);" />
-            <Button layoutX="290.0" layoutY="410.0" mnemonicParsing="false" stylesheets="@StyleLogin.css" text="Pagar" />
-            <Button layoutX="263.0" layoutY="451.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" stylesheets="@StyleLogin.css" text="Limpiar Menú" />
+            <Button layoutX="290.0" layoutY="410.0" mnemonicParsing="false" onAction="#pay" stylesheets="@StyleLogin.css" text="Pagar" />
+            <Button layoutX="263.0" layoutY="451.0" mnemonicParsing="false" onAction="#clean" prefHeight="26.0" prefWidth="101.0" stylesheets="@StyleLogin.css" text="Limpiar Menú" />
             <Text fill="#ac2428" layoutX="23.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acciones" textAlignment="CENTER" wrappingWidth="207.48986816406244">
                <font>
                   <Font name="Maiandra GD" size="45.0" />
                </font>
             </Text>
-            <TextField fx:id="entrada" editable="false" layoutX="19.0" layoutY="117.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
-            <TextField fx:id="fuerte" editable="false" layoutX="223.0" layoutY="117.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
-            <TextField fx:id="bebida" editable="false" layoutX="21.0" layoutY="192.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
-            <TextField fx:id="postre" editable="false" layoutX="225.0" layoutY="192.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
-            <Label layoutX="19.0" layoutY="90.0" text="Entrada">
+            <TextField fx:id="entrada" editable="false" layoutX="19.0" layoutY="83.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
+            <TextField fx:id="fuerte" editable="false" layoutX="223.0" layoutY="83.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
+            <TextField fx:id="bebida" editable="false" layoutX="21.0" layoutY="158.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
+            <TextField fx:id="postre" editable="false" layoutX="225.0" layoutY="158.0" prefHeight="26.0" prefWidth="169.0" style="-fx-border-color: #ac2428;" />
+            <Label layoutX="19.0" layoutY="56.0" text="Entrada">
                <font>
                   <Font name="Maiandra GD" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="223.0" layoutY="90.0" text="Plato Fuerte">
+            <Label layoutX="223.0" layoutY="56.0" text="Plato Fuerte">
                <font>
                   <Font name="Maiandra GD" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="18.0" layoutY="162.0" text="Bebida">
+            <Label layoutX="18.0" layoutY="128.0" text="Bebida">
                <font>
                   <Font name="Maiandra GD" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="223.0" layoutY="162.0" text="Postre">
+            <Label layoutX="223.0" layoutY="128.0" text="Postre">
                <font>
                   <Font name="Maiandra GD" size="20.0" />
                </font>
             </Label>
+            <Button layoutX="161.0" layoutY="206.0" mnemonicParsing="false" onAction="#prepararMenu" stylesheets="@StyleLogin.css" text="Ordenar Menú" />
          </children>
       </AnchorPane>
     </children>

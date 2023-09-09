@@ -1,7 +1,10 @@
 package com.j2devs.acmerestaurant;
 
-import java.io.IOException;
-
+import com.j2devs.acmerestaurant.GUI.AppController;
+import com.j2devs.acmerestaurant.Modelos.Bebida.*;
+import com.j2devs.acmerestaurant.Modelos.Entrada.*;
+import com.j2devs.acmerestaurant.Modelos.PlatoFuerte.*;
+import com.j2devs.acmerestaurant.Modelos.Postre.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,12 +13,17 @@ import javafx.scene.Scene;
 import javafx.stage.StageStyle;
 
 public class App extends Application{
+
   private double x, y;
+
   @Override
   public void start(Stage stage) {
     try {
       FXMLLoader loader = new FXMLLoader(getClass().getResource("views/App.fxml"));
       Parent root = loader.load();
+
+      AppController controller = loader.getController();
+      controller.createBuilders();
 
       stage.setScene(new Scene(root));
       stage.initStyle(StageStyle.UNDECORATED);

@@ -3,6 +3,10 @@ package com.j2devs.acmerestaurant.Modelos.PlatoFuerte;
 import com.j2devs.acmerestaurant.Modelos.Componente;
 
 public class PlatoFuerte2Builder extends PlatoFuerteBuilder {
+  public PlatoFuerte2Builder(String name) {
+    super(name);
+  }
+
   @Override
   public void prepararPrincipal() {
     this.platoFuerte.setPrincipal(new Componente("Principal", "Pollo asado"));
@@ -20,6 +24,6 @@ public class PlatoFuerte2Builder extends PlatoFuerteBuilder {
 
   @Override
   public void asignarPrecio() {
-    this.platoFuerte.setPrecio(100.0);
+    this.platoFuerte.setPrecio(12000.0);
   }
 }

@@ -9,6 +9,7 @@ public class PlatoFuerte implements Cloneable {
   private Componente acompanante2;
 
   public PlatoFuerte() {
+
   }
 
   @Override

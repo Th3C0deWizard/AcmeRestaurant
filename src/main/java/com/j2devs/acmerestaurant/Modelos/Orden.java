@@ -51,4 +51,8 @@ public class Orden {
     public Bebida getBebida() {
         return this.bebida;
     }
+
+    public double getPrecio() {
+        return this.entrada.getPrecio() + this.platoFuerte.getPrecio() + this.postre.getPrecio() + this.bebida.getPrecio();
+    }
 }
