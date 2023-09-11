@@ -2,7 +2,7 @@ package com.j2devs.acmerestaurant.Modelos.PlatoFuerte;
 
 import com.j2devs.acmerestaurant.Modelos.Componente;
 
-public class PlatoFuerte implements Cloneable {
+public class PlatoFuerte {
   private Double precio;
   private Componente principal;
   private Componente acompanante1;
@@ -10,19 +10,6 @@ public class PlatoFuerte implements Cloneable {
 
   public PlatoFuerte() {
 
-  }
-
-  @Override
-  public PlatoFuerte clone() {
-    try {
-      PlatoFuerte clone = (PlatoFuerte) super.clone();
-      clone.principal = this.principal.clone();
-      clone.acompanante1 = this.acompanante1.clone();
-      clone.acompanante2 = this.acompanante2.clone();
-      return clone;
-    } catch (CloneNotSupportedException e) {
-      throw new AssertionError();
-    }
   }
 
   public void setPrecio(Double precio) {

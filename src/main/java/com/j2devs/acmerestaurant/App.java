@@ -1,10 +1,6 @@
 package com.j2devs.acmerestaurant;
 
 import com.j2devs.acmerestaurant.GUI.AppController;
-import com.j2devs.acmerestaurant.Modelos.Bebida.*;
-import com.j2devs.acmerestaurant.Modelos.Entrada.*;
-import com.j2devs.acmerestaurant.Modelos.PlatoFuerte.*;
-import com.j2devs.acmerestaurant.Modelos.Postre.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,7 +8,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.stage.StageStyle;
 
-public class App extends Application{
+public class App extends Application {
 
   private double x, y;
 
@@ -40,7 +36,7 @@ public class App extends Application{
       });
 
       stage.show();
-    }catch(Exception e){
+    } catch (Exception e) {
       e.printStackTrace();
     }
   }

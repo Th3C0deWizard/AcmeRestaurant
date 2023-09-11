@@ -1,19 +1,17 @@
 package com.j2devs.acmerestaurant.Modelos;
+
 import com.j2devs.acmerestaurant.Modelos.Bebida.Bebida;
 import com.j2devs.acmerestaurant.Modelos.Entrada.Entrada;
 import com.j2devs.acmerestaurant.Modelos.PlatoFuerte.PlatoFuerte;
 import com.j2devs.acmerestaurant.Modelos.Postre.Postre;
 
 public class Orden {
-    private final int numeroOrden;
-
     private Entrada entrada;
     private PlatoFuerte platoFuerte;
     private Postre postre;
     private Bebida bebida;
 
-    public Orden(int numeroOrden) {
-        this.numeroOrden = numeroOrden;
+    public Orden() {
     }
 
     public void setEntrada(Entrada entrada) {
@@ -30,10 +28,6 @@ public class Orden {
 
     public void setBebida(Bebida bebida) {
         this.bebida = bebida;
-    }
-
-    public int getNumeroOrden() {
-        return this.numeroOrden;
     }
 
     public Entrada getEntrada() {
@@ -53,6 +47,7 @@ public class Orden {
     }
 
     public double getPrecio() {
-        return this.entrada.getPrecio() + this.platoFuerte.getPrecio() + this.postre.getPrecio() + this.bebida.getPrecio();
+        return this.entrada.getPrecio() + this.platoFuerte.getPrecio() + this.postre.getPrecio()
+                + this.bebida.getPrecio();
     }
 }

@@ -1,21 +1,12 @@
 package com.j2devs.acmerestaurant.Modelos.Entrada;
+
 import com.j2devs.acmerestaurant.Modelos.Componente;
 
-public class Entrada implements Cloneable{
+public class Entrada {
     private Double precio;
     private Componente componente;
 
-    public Entrada() {}
-
-    @Override
-    public Entrada clone() {
-        try {
-            Entrada clone = (Entrada) super.clone();
-            clone.componente = this.componente.clone();
-            return clone;
-        } catch (CloneNotSupportedException e) {
-            throw new AssertionError();
-        }
+    public Entrada() {
     }
 
     public void setPrecio(Double precio) {
