@@ -37,3 +37,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+.settings/
+.classpath
+.project
+acmeRestaurant.sublime-project
